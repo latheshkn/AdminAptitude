@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AdminAptitude</string>
+    <string name="navigation_drawer_open">open navigaqtion drawer</string>
+    <string name="navigation_drawer_close">close navigaqtion drawer</string>
 </resources>

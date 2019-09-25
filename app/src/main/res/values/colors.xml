@@ -9,4 +9,5 @@
     <color name="colorBlueT">#6428a2cf</color>
     <color name="colorPurple">#A130FF</color>
     <color name="colorPurpleT">#64a130ff</color>
+    <color name="colorBlack">#000000</color>
 </resources>
