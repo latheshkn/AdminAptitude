@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+
+    <item android:id="@+id/menu"
+        android:title="Menu"
+        android:icon="@drawable/ic_home_black"/>
+
+        <item android:id="@+id/Setting"
+            android:title="Setting"
+            android:icon="@drawable/ic_home_black"/>
+
+        <item android:id="@+id/Practice"
+            android:title="Practice"
+            android:icon="@drawable/ic_home_black"/>
+    </group>
+    <item android:title="choose">
+
+        <menu>
+            <item android:id="@+id/Share"
+                android:title="Setting"
+                android:icon="@drawable/ic_home_black"/>
+
+            <item android:id="@+id/Like"
+                android:title="Practice"
+                android:icon="@drawable/ic_home_black"/>
+
+        </menu>
+    </item>
+</menu>
