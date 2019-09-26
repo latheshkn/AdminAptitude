@@ -10,4 +10,6 @@
     <color name="colorPurple">#A130FF</color>
     <color name="colorPurpleT">#64a130ff</color>
     <color name="colorBlack">#000000</color>
+    <color name="colorRed">#CD5C5C</color>
+    <color name="colorRedLight">#FFA07A</color>
 </resources>

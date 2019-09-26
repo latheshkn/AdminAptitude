@@ -16,8 +16,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class MainActivity extends AppCompatActivity {
 
     Toolbar tool_nav;
-    LinearLayout linear_candidate;
-    FloatingActionButton floating_button;
+    LinearLayout linear_candidate,linear_report;
     DrawerLayout drawerLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +25,15 @@ public class MainActivity extends AppCompatActivity {
 
         tool_nav=findViewById(R.id.tool_dash);
         drawerLayout=findViewById(R.id.nav_drawer);
-        floating_button=findViewById(R.id.floating_button);
+        linear_report=findViewById(R.id.linear_report);
+
+        linear_report.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,ReportActivity.class);
+                startActivity(intent);
+            }
+        });
 
         setSupportActionBar(tool_nav);
 
@@ -40,13 +47,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        floating_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,AddCandidateListActivity.class);
-                startActivity(intent);
-            }
-        });
+
 
         ActionBarDrawerToggle  toggle=new ActionBarDrawerToggle(this,drawerLayout,tool_nav,
                 R.string.navigation_drawer_open,R.string.navigation_drawer_close);

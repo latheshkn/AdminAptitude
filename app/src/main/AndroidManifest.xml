@@ -9,10 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddCandidateListActivity"></activity>
-        <activity android:name=".CandidateListActivity"></activity>
+        <activity android:name=".QuestionListActivity"></activity>
+        <activity
+            android:name=".ReportActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".AddCandidateListActivity" />
+        <activity android:name=".CandidateListActivity" />
         <activity android:name=".NavbarActivity" />
-        <activity android:name=".DashBoardActivity"></activity>
+        <activity android:name=".DashBoardActivity" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">

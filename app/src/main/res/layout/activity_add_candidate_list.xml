@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AddCandidateListActivity">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/Clayout1"
         android:layout_width="match_parent"
@@ -16,15 +17,17 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <ImageView
                     android:id="@+id/gift_ic"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
-                    />
+                    android:src="@drawable/candidate" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </FrameLayout>
 
@@ -40,32 +43,31 @@
         app:layout_constraintTop_toBottomOf="@id/Clayout1">
 
         <EditText
-            android:id="@+id/AlertDishName"
+            android:id="@+id/txt_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:text="Hyderabad Briyani"
+            android:hint="Name"
             android:textColor="@color/colorBlack"
-            android:textSize="20dp"
+            android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/AlertDishCategory"
+            android:id="@+id/txt_userid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Briyani,Mughlai,South Indian"
+            android:hint="User Id"
             android:textColor="@color/colorBlack"
-            android:textSize="15dp"
+            android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/AlertDishName" />
+            app:layout_constraintTop_toBottomOf="@id/txt_name" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -73,71 +75,52 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="17dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Clayout2">
 
 
-
-
-
         <EditText
             android:id="@+id/dishAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:text=""
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dishAmount" />
+
+        <EditText
+            android:id="@+id/password"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:hint="Password"
             android:text=""
-            android:layout_marginLeft="20dp"
             android:textColor="@color/colorBlack"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            />
-
+            app:layout_constraintTop_toBottomOf="@+id/email" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/Clayout4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="15dp"
-        android:paddingBottom="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Clayout3">
 
-
-        <Button
-            android:id="@+id/AlertSave"
-            android:layout_width="100dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginRight="5dp"
-            android:text="Save"
-            android:textAllCaps="false"
-            android:textColor="@color/colorWhite"
-            android:background="@color/colorPrimaryDark"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-        <Button
-            android:id="@+id/AlertDelet"
-            android:layout_width="100dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginRight="5dp"
-            android:background="@color/colorPrimaryDark"
-            android:text="Delet"
-            android:textAllCaps="false"
-            android:textColor="@color/colorWhite"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
