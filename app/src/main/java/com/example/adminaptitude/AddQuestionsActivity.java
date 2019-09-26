@@ -5,17 +5,17 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 
-public class QuestionListActivity extends AppCompatActivity {
+public class AddQuestionsActivity extends AppCompatActivity {
 
-    Toolbar tool_question;
+    Toolbar tool_add_question;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_question_list);
+        setContentView(R.layout.activity_add_questions);
 
-        tool_question=findViewById(R.id.tool_question);
+        tool_add_question=findViewById(R.id.tool_add_question);
 
-        setSupportActionBar(tool_question);
+        setSupportActionBar(tool_add_question);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }

@@ -36,7 +36,6 @@
             android:layout_width="match_parent"
             android:layout_height="220dp"
             android:background="@drawable/header"
-            android:contentDescription="header"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             android:elevation="4dp"/>
@@ -223,6 +222,7 @@
 
 
                     <LinearLayout
+                        android:id="@+id/linear_questionlist"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"

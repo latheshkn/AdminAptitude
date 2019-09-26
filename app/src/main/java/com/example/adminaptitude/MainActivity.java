@@ -16,7 +16,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class MainActivity extends AppCompatActivity {
 
     Toolbar tool_nav;
-    LinearLayout linear_candidate,linear_report;
+    LinearLayout linear_candidate,linear_report,linear_questionlist;
     DrawerLayout drawerLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,15 @@ public class MainActivity extends AppCompatActivity {
         tool_nav=findViewById(R.id.tool_dash);
         drawerLayout=findViewById(R.id.nav_drawer);
         linear_report=findViewById(R.id.linear_report);
+        linear_questionlist=findViewById(R.id.linear_questionlist);
+
+        linear_questionlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,QuestionListActivity.class);
+                startActivity(intent);
+            }
+        });
 
         linear_report.setOnClickListener(new View.OnClickListener() {
             @Override
