@@ -9,17 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DeleteCategory"></activity>
-        <activity android:name=".EntterQuestionActivity" />
+        <activity android:name=".AddCategoryActivity"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".DeleteCategory" />
+        <activity
+            android:name=".EntterQuestionActivity"
+            android:parentActivityName=".AddQuestionsActivity" />
         <activity
             android:name=".AddQuestionsActivity"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".QuestionListActivity" />
+        <activity android:name=".QuestionListActivity"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".ReportActivity"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".AddCandidateListActivity" />
-        <activity android:name=".CandidateListActivity" />
+        <activity android:name=".CandidateListActivity"
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".NavbarActivity" />
         <activity android:name=".DashBoardActivity" />
         <activity

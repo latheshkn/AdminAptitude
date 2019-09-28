@@ -16,7 +16,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class MainActivity extends AppCompatActivity {
 
     Toolbar tool_nav;
-    LinearLayout linear_candidate,linear_report,linear_questionlist;
+    LinearLayout linear_candidate,linear_report,linear_questionlist,linear_addquestion
+            ,linear_delete,linear_add_category;
     DrawerLayout drawerLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,34 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout=findViewById(R.id.nav_drawer);
         linear_report=findViewById(R.id.linear_report);
         linear_questionlist=findViewById(R.id.linear_questionlist);
+        linear_addquestion=findViewById(R.id.linear_addquestion);
+        linear_delete=findViewById(R.id.linear_delete);
+        linear_add_category=findViewById(R.id.linear_add_category);
+
+        linear_add_category.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,AddCategoryActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        linear_delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,DeleteCategory.class);
+                startActivity(intent);
+            }
+        });
+
+        linear_addquestion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,AddQuestionsActivity.class);
+                startActivity(intent);
+            }
+        });
 
         linear_questionlist.setOnClickListener(new View.OnClickListener() {
             @Override

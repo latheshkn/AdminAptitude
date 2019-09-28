@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EntterQuestionActivity">
+    tools:context=".EntterQuestionActivity"
+    android:background="@color/colorlim">
 
     <RelativeLayout
         android:id="@+id/relative_top"
@@ -16,12 +17,13 @@
 
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/tool_dash"
+            android:id="@+id/tool_enter_question"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             android:elevation="4dp"
             app:title="Enter the Question"
+            android:background="@color/yellow"
             />
 
 
@@ -37,16 +39,7 @@
 <!--            android:layout_marginBottom="50dp"-->
 <!--            android:src="@drawable/circlered" />-->
 
-        <ImageView
-            android:id="@+id/circle2"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginRight="-90dp"
-            android:layout_marginBottom="-40dp"
-            android:src="@drawable/header1"
-            android:scaleType="fitXY"/>
+
 <!--        <ImageView-->
 <!--            android:id="@+id/circle3"-->
 <!--            android:layout_width="134dp"-->
@@ -101,6 +94,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_gravity="center"
                     android:textSize="20dp"
+                    android:layout_marginRight="10dp"
                     />
                <TextView
                    android:layout_width="match_parent"
@@ -217,7 +211,7 @@
             android:layout_marginLeft="100dp"
             android:layout_marginTop="30dp"
             android:text="Submit"
-            android:background="@drawable/rectangle"
+            android:background="@drawable/rectangleredlight"
             android:textColor="@color/colorWhite"
             />
     </RelativeLayout>

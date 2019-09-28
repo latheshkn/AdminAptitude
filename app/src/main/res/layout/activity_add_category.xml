@@ -4,42 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".QuestionListActivity"
+    tools:context=".AddCategoryActivity"
     android:background="@color/colorlim">
-
     <RelativeLayout
         android:id="@+id/relative_top"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
 
         <Button
-            android:id="@+id/btnnext"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:layout_below="@+id/card_option4"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="50dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/rectangle"
-            android:text="Next"
-            android:textColor="@color/colorWhite"/>
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/card_add_Category"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rectangleredlight"
+            android:text="Add" />
 
-        <Button
-            android:id="@+id/btnprevious"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:layout_below="@+id/card_option4"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/rectangle"
-            android:text="Previous"
-            android:textColor="@color/colorWhite"/>
 
 <!--        <ImageView-->
 <!--            android:id="@+id/circle1"-->
@@ -71,53 +55,41 @@
 <!--            android:layout_toLeftOf="@id/circle2"-->
 <!--            android:src="@drawable/circlet" />-->
 
-<!--        <ImageView-->
-<!--            android:id="@+id/circle4"-->
-<!--            android:layout_width="134dp"-->
-<!--            android:layout_height="134dp"-->
-<!--            android:layout_below="@+id/tool_dash"-->
-<!--            android:layout_alignParentRight="true"-->
-<!--            android:layout_marginTop="-130dp"-->
-<!--            android:layout_marginRight="-100dp"-->
-<!--            android:src="@drawable/circlered" />-->
+        <ImageView
+            android:id="@+id/circle4"
+            android:layout_width="134dp"
+            android:layout_height="134dp"
+            android:layout_below="@+id/tool_add_question"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-130dp"
+            android:layout_marginRight="-100dp"
+            android:src="@drawable/circlered" />
 
         <ImageView
             android:id="@+id/circle5"
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:layout_below="@+id/tool_dash"
-            android:layout_marginLeft="10dp"
+            android:layout_width="134dp"
+            android:layout_height="134dp"
+            android:layout_below="@+id/tool_add_question"
             android:layout_marginTop="-150dp"
-            android:layout_marginRight="10dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/rectangle" />
+            android:src="@drawable/circlet" />
 
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tool_question"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:text="What is Aptitude ?"
-            android:textColor="@color/colorWhite"
-            android:textSize="20dp" />
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/tool_question"
+            android:id="@+id/tool_add_Category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:elevation="4dp"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            app:title="List of Questions" />
+            app:title="Add Category"
+            android:background="@color/yellow"/>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_option1"
+            android:id="@+id/card_type"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/circle5"
+            android:layout_below="@+id/tool_add_question"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="100dp"
             android:layout_marginRight="10dp"
             app:cardCornerRadius="5dp"
             app:cardUseCompatPadding="true"
@@ -127,31 +99,33 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="@color/colorlim"
-                android:orientation="horizontal">
+                android:background="@color/yellow">
+
+
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Option A :"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="Select type"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Option A :"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="20dp"/>
-
-
+                <Spinner
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="230dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_option2"
+            android:id="@+id/card_category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/card_option1"
+            android:layout_below="@+id/card_type"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
@@ -161,84 +135,95 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="@color/colorlim">
+                android:background="@color/yellow">
+
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Option A :"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="Select Candidate"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Option A :"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="20dp"/>
+                <Spinner
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="175dp" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_option3"
+            android:id="@+id/card_sub_category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/card_option2"
+            android:layout_below="@+id/card_category"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="50dp"
             android:layout_marginRight="10dp"
             app:cardCornerRadius="5dp"
-            app:cardUseCompatPadding="true">
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="@color/colorlim">
+                android:background="@color/yellow">
+
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Option A :"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="Select type"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+                <Spinner
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="230dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Option A :"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="20dp"/>
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_option4"
+            android:id="@+id/card_add_Category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/card_option3"
+            android:layout_below="@+id/card_sub_category"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="50dp"
             android:layout_marginRight="10dp"
             app:cardCornerRadius="5dp"
-            app:cardUseCompatPadding="true">
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="@color/colorlim">
+                android:background="@color/yellow">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <EditText
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Option A :"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="Add Category"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:background="@android:color/transparent"
+                    />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Option A :"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="20dp"/>
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>

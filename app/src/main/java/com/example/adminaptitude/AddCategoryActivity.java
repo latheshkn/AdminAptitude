@@ -5,17 +5,17 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 
-public class EntterQuestionActivity extends AppCompatActivity {
+public class AddCategoryActivity extends AppCompatActivity {
 
-    Toolbar tool_enter_question;
+    Toolbar tool_add_Category;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_entter_question);
+        setContentView(R.layout.activity_add_category);
 
-        tool_enter_question=findViewById(R.id.tool_enter_question);
+        tool_add_Category=findViewById(R.id.tool_add_Category);
 
-        setSupportActionBar(tool_enter_question);
+        setSupportActionBar(tool_add_Category);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }

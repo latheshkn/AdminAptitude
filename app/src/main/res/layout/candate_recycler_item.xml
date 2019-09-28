@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    >
 
 
     <androidx.cardview.widget.CardView
@@ -18,8 +19,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="5dp"
-            android:background="@color/colorBlue">
+            android:background="@color/colorlim">
 
             <LinearLayout
                 android:id="@+id/linear_name"
@@ -40,6 +40,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 android:text="Name :"
                 android:textSize="15dp"
+                android:layout_marginLeft="10dp"
                 />
 
                 <TextView
@@ -72,6 +73,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     android:text="Mobile :"
                     android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
                     />
 
                 <TextView

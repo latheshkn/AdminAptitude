@@ -29,16 +29,18 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/colorlim">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/tool_dash"
             android:layout_width="match_parent"
-            android:layout_height="220dp"
-            android:background="@drawable/header"
+            android:layout_height="200dp"
+            android:background="@color/yellow"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            android:elevation="4dp"/>
+            android:elevation="4dp"
+            app:title="Welcome Admin"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -61,34 +63,34 @@
             android:textColor="@color/colorWhite"
             android:textSize="30sp"
             android:textStyle="bold" />
-        <ImageView
-            android:id="@+id/circle1"
-            android:layout_width="134dp"
-            android:layout_height="134dp"
-            android:transitionName="image"
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="-100dp"
-            android:layout_marginBottom="50dp"
-            android:src="@drawable/circlet" />
+        <!--        <ImageView-->
+        <!--            android:id="@+id/circle1"-->
+        <!--            android:layout_width="134dp"-->
+        <!--            android:layout_height="134dp"-->
+        <!--            android:transitionName="image"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:layout_marginLeft="-100dp"-->
+        <!--            android:layout_marginBottom="50dp"-->
+        <!--            android:src="@drawable/circlet" />-->
 
-        <ImageView
-            android:id="@+id/circle2"
-            android:layout_width="182dp"
-            android:layout_height="182dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginRight="-90dp"
-            android:layout_marginBottom="-40dp"
-            android:src="@drawable/circle" />
-        <ImageView
-            android:id="@+id/circle3"
-            android:layout_width="134dp"
-            android:layout_height="134dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginRight="-50dp"
-            android:layout_marginBottom="-60dp"
-            android:layout_toLeftOf="@id/circle2"
-            android:src="@drawable/circlet" />
+        <!--        <ImageView-->
+        <!--            android:id="@+id/circle2"-->
+        <!--            android:layout_width="182dp"-->
+        <!--            android:layout_height="182dp"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:layout_marginRight="-90dp"-->
+        <!--            android:layout_marginBottom="-40dp"-->
+        <!--            android:src="@drawable/circle" />-->
+        <!--        <ImageView-->
+        <!--            android:id="@+id/circle3"-->
+        <!--            android:layout_width="134dp"-->
+        <!--            android:layout_height="134dp"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:layout_marginRight="-50dp"-->
+        <!--            android:layout_marginBottom="-60dp"-->
+        <!--            android:layout_toLeftOf="@id/circle2"-->
+        <!--            android:src="@drawable/circlet" />-->
         <ImageView
             android:id="@+id/circle4"
             android:layout_width="134dp"
@@ -106,7 +108,6 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/halfcircle"
             android:layout_below="@+id/tool_dash"
             android:layout_margin="10dp">
 
@@ -118,8 +119,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:background="@drawable/halfcircle">
+                app:layout_constraintBottom_toBottomOf="parent">
 
 
 
@@ -148,7 +148,7 @@
                             <androidx.constraintlayout.widget.ConstraintLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@color/design_default_color_primary">
+                                android:background="@color/colorlim">
 
 
                                 <de.hdodenhof.circleimageview.CircleImageView
@@ -189,7 +189,7 @@
                             <androidx.constraintlayout.widget.ConstraintLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@color/colorBlueT">
+                                android:background="@color/colorlim">
 
 
                                 <de.hdodenhof.circleimageview.CircleImageView
@@ -237,7 +237,7 @@
                             <androidx.constraintlayout.widget.ConstraintLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@color/colorPurple">
+                                android:background="@color/colorlim">
 
 
                                 <de.hdodenhof.circleimageview.CircleImageView
@@ -263,6 +263,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/linear_addquestion"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
@@ -277,7 +278,7 @@
                             <androidx.constraintlayout.widget.ConstraintLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@color/colorPurpleT">
+                                android:background="@color/colorlim">
 
 
                                 <de.hdodenhof.circleimageview.CircleImageView
@@ -312,6 +313,7 @@
 
 
                     <LinearLayout
+                        android:id="@+id/linear_add_category"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
@@ -326,7 +328,7 @@
                             <androidx.constraintlayout.widget.ConstraintLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@color/design_default_color_primary_dark">
+                                android:background="@color/colorlim">
 
 
                                 <de.hdodenhof.circleimageview.CircleImageView
@@ -352,10 +354,12 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/linear_delete"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_marginLeft="10dp">
+
                         <androidx.cardview.widget.CardView
                             android:layout_width="160dp"
                             android:layout_height="100dp"
@@ -366,7 +370,7 @@
                             <androidx.constraintlayout.widget.ConstraintLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@color/design_default_color_primary">
+                                android:background="@color/colorlim">
 
 
                                 <de.hdodenhof.circleimageview.CircleImageView

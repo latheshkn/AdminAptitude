@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddQuestionsActivity">
+    tools:context=".AddQuestionsActivity"
+    android:background="@color/colorlim">
     <RelativeLayout
         android:id="@+id/relative_top"
         android:layout_width="match_parent"
@@ -21,39 +22,16 @@
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             android:elevation="4dp"
             app:title="Add Question"
+            android:background="@color/yellow"
             />
 
 
 
 
-        <ImageView
-            android:id="@+id/circle1"
-            android:layout_width="134dp"
-            android:layout_height="134dp"
-            android:transitionName="image"
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="-100dp"
-            android:layout_marginBottom="50dp"
-            android:src="@drawable/circlered" />
 
-        <ImageView
-            android:id="@+id/circle2"
-            android:layout_width="182dp"
-            android:layout_height="182dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginRight="-90dp"
-            android:layout_marginBottom="-40dp"
-            android:src="@drawable/circlered" />
-        <ImageView
-            android:id="@+id/circle3"
-            android:layout_width="134dp"
-            android:layout_height="134dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginRight="-50dp"
-            android:layout_marginBottom="-60dp"
-            android:layout_toLeftOf="@id/circle2"
-            android:src="@drawable/circlet" />
+
+
+
         <ImageView
             android:id="@+id/circle4"
             android:layout_width="134dp"
@@ -89,8 +67,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:background="@color/colorRed"
+                android:layout_height="40dp"
+                android:background="@color/colorlim"
                 >
 
                 <TextView
@@ -100,12 +78,12 @@
                     android:textStyle="bold"
                     android:layout_marginLeft="10dp"
                     android:layout_gravity="center"
-                    android:textSize="20dp"
+                    android:textSize="15sp"
                     />
                 <Spinner
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="230dp"
+                    android:layout_marginLeft="220dp"
                     android:layout_gravity="center" />
 
             </LinearLayout>
@@ -124,23 +102,23 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:background="@color/colorRedLight"
+                android:layout_height="40dp"
+                android:background="@color/colorlim"
                 >
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Select Candidate"
+                    android:text="Select Category"
                     android:textStyle="bold"
                     android:layout_marginLeft="10dp"
                     android:layout_gravity="center"
-                    android:textSize="20dp"
+                    android:textSize="15sp"
                     />
                 <Spinner
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="175dp"
+                    android:layout_marginLeft="190dp"
                     android:layout_gravity="center" />
 
             </LinearLayout>
@@ -161,23 +139,23 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:background="@color/colorlightblue"
+                android:layout_height="40dp"
+                android:background="@color/colorlim"
                 >
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Select type"
+                    android:text="Select Sub Category"
                     android:textStyle="bold"
                     android:layout_marginLeft="10dp"
                     android:layout_gravity="center"
-                    android:textSize="20dp"
+                    android:textSize="15sp"
                     />
                 <Spinner
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="230dp"
+                    android:layout_marginLeft="160dp"
                     android:layout_gravity="center" />
 
             </LinearLayout>
@@ -198,18 +176,24 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:background="@color/colorlime"
+                android:layout_height="40dp"
+                android:background="@color/colorlim"
                 >
 
-                <EditText
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Select subCategory"
+                    android:text="Select Set"
                     android:textStyle="bold"
                     android:layout_marginLeft="10dp"
                     android:layout_gravity="center"
-                    android:textSize="20dp"
+                    android:textSize="15sp"
+                    />
+                <Spinner
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_gravity="center"
                     />
 
 
@@ -217,13 +201,14 @@
         </androidx.cardview.widget.CardView>
 
         <Button
+            android:id="@+id/btn_add"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_below="@+id/card_add_Category"
             android:layout_marginLeft="100dp"
             android:layout_marginTop="30dp"
-            android:text="Search"
-            android:background="@drawable/rectangle"
+            android:text="Add"
+            android:background="@drawable/rectangleredlight"
             />
     </RelativeLayout>
 </LinearLayout>

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddCandidateListActivity">
+    tools:context=".AddCandidateListActivity"
+    android:background="@color/colorlim">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/Clayout1"
@@ -63,6 +64,7 @@
             android:hint="User Id"
             android:textColor="@color/colorBlack"
             android:textSize="15sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/txt_name" />

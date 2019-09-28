@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#28A2CF</color>
-    <color name="colorAccent">#FDD734</color>
-    <color name="yellow">#FDD734</color>
+    <color name="colorPrimaryDark">#D5563B</color>
+    <color name="colorAccent">#FFA07A</color>
+    <color name="yellow">#D5563B</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorBlue">#28A2CF</color>
     <color name="colorBlueT">#6428a2cf</color>
@@ -14,4 +14,5 @@
     <color name="colorRedLight">#FFA07A</color>
     <color name="colorlightblue">#2ECCFA</color>
     <color name="colorlime">#58FA82</color>
+    <color name="colorlim">#E6D1CC</color>
 </resources>

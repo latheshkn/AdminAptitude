@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CandidateListActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/colorlim">
 
    <androidx.appcompat.widget.Toolbar
        android:id="@+id/tool_candidate_list"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:background="@color/colorPurple"
+       android:background="@color/yellow"
        app:title="Candidate"
-       app:titleTextColor="@color/colorWhite"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintTop_toTopOf="parent"
@@ -39,7 +39,7 @@
         android:layout_marginLeft="340dp"
         android:layout_marginBottom="20dp"
         android:src="@drawable/ic_add_black_24dp"
-        app:backgroundTint="@color/colorPurple"
+        app:backgroundTint="@color/yellow"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

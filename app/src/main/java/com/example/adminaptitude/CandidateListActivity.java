@@ -1,6 +1,7 @@
 package com.example.adminaptitude;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -17,14 +18,17 @@ public class CandidateListActivity extends AppCompatActivity implements AddCandi
     RecyclerView recycler_candidate;
     LinearLayoutManager linearLayoutManager;
     FloatingActionButton floating_button;
+    Toolbar tool_candidate_list;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_candidate_list);
         recycler_candidate=findViewById(R.id.recycler_candidate);
         floating_button=findViewById(R.id.floating_button);
+        tool_candidate_list=findViewById(R.id.tool_candidate_list);
 
-
+        setSupportActionBar(tool_candidate_list);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         floating_button.setOnClickListener(new View.OnClickListener() {
             @Override
