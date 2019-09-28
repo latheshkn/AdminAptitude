@@ -9,8 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddCategoryActivity"
-            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".CandidateDetailActivity"
+            android:parentActivityName=".CandidateListActivity"></activity>
+        <activity
+            android:name=".AddCategoryActivity"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".DeleteCategory" />
         <activity
             android:name=".EntterQuestionActivity"
@@ -18,14 +21,16 @@
         <activity
             android:name=".AddQuestionsActivity"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".QuestionListActivity"
-            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".QuestionListActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ReportActivity"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".AddCandidateListActivity" />
-        <activity android:name=".CandidateListActivity"
-            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".CandidateListActivity"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".NavbarActivity" />
         <activity android:name=".DashBoardActivity" />
         <activity

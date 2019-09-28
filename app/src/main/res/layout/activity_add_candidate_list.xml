@@ -83,7 +83,7 @@
 
 
         <EditText
-            android:id="@+id/dishAmount"
+            android:id="@+id/mobile_no"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Mobile Number"
@@ -106,7 +106,7 @@
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/dishAmount" />
+            app:layout_constraintTop_toBottomOf="@+id/mobile_no" />
 
         <EditText
             android:id="@+id/password"
