@@ -43,12 +43,18 @@ public class SpinnerAdapter extends ArrayAdapter<ModelClassForSpinner> {
             ImageView country_flag = (ImageView) convertView.findViewById(R.id.country_flag);
             TextView country_name = (TextView) convertView.findViewById(R.id.country_name);
 
+//            country_name.setTextSize(15);
+//            country_flag.getLayoutParams().height = 60;
+//            country_flag.getLayoutParams().width = 60;
             ModelClassForSpinner countryItem = getItem(position);
+
+
 
             //now we have get our name and flagImage out of this item and show it in our image view and TExt View
             if (countryItem != null) {
-                country_flag.setImageResource(countryItem.getImage());
-                country_name.setText(countryItem.getName());
+//                country_flag.setImageResource(countryItem.;
+                country_name.setText(countryItem.getCategory_name());
+
             }
             return convertView;
         }

@@ -1,27 +1,23 @@
 package com.example.adminaptitude;
 
 public class ModelClassForSpinner {
-    String name;
-    int image;
 
-    public ModelClassForSpinner(String name, int image) {
-        this.name = name;
-        this.image = image;
+   String Category_name;
+
+
+    public ModelClassForSpinner() {
+
     }
 
-    public String getName() {
-        return name;
+    public ModelClassForSpinner(String category_name) {
+        Category_name = category_name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getCategory_name() {
+        return Category_name;
     }
 
-    public int getImage() {
-        return image;
-    }
-
-    public void setImage(int image) {
-        this.image = image;
+    public void setCategory_name(String category_name) {
+        Category_name = category_name;
     }
 }
