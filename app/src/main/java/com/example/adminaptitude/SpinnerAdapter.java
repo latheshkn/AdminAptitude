@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
+import com.example.adminaptitude.ModelClass.ModelClassForSpinner;
+
 import java.util.List;
 
 public class SpinnerAdapter extends ArrayAdapter<ModelClassForSpinner> {
@@ -46,14 +48,14 @@ public class SpinnerAdapter extends ArrayAdapter<ModelClassForSpinner> {
 //            country_name.setTextSize(15);
 //            country_flag.getLayoutParams().height = 60;
 //            country_flag.getLayoutParams().width = 60;
-            ModelClassForSpinner countryItem = getItem(position);
+            ModelClassForSpinner type = getItem(position);
 
 
 
             //now we have get our name and flagImage out of this item and show it in our image view and TExt View
-            if (countryItem != null) {
+            if (type != null) {
 //                country_flag.setImageResource(countryItem.;
-                country_name.setText(countryItem.getCategory_name());
+                country_name.setText(type.getCategory_name());
 
             }
             return convertView;

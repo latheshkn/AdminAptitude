@@ -65,10 +65,6 @@ public class CandidateDetailActivity extends AppCompatActivity {
                 email.setText(get_em);
                 pass.setText(get_pss);
 
-
-
-
-
             }
 
             @Override

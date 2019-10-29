@@ -1,4 +1,4 @@
-package com.example.adminaptitude;
+package com.example.adminaptitude.ModelClass;
 
 public class ModelForCandidateList {
 

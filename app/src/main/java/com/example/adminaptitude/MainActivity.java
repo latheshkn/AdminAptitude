@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         linear_addquestion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,AddQuestionsActivity.class);
+                Intent intent=new Intent(MainActivity.this,SelectCategoryForAddQuestionActivity.class);
                 startActivity(intent);
             }
         });

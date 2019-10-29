@@ -25,6 +25,16 @@
             android:background="@drawable/rectangleredlight"
             android:text="Add" />
 
+        <Button
+            android:id="@+id/btn_addsub"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/btn_add"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rectangleredlight"
+            android:text="Add SubCategory" />
+
 
 <!--        <ImageView-->
 <!--            android:id="@+id/circle1"-->
@@ -88,7 +98,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tool_add_Category"
-            android:text="Select Type"
+            android:text="Category List"
             android:layout_marginTop="20dp"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -110,7 +120,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="50dp"
                 android:background="@color/yellow">
                 <Spinner
                     android:id="@+id/spn_type"
@@ -159,49 +169,22 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_sub_category"
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/card_category"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginRight="10dp"
-            app:cardCornerRadius="5dp"
-            app:cardUseCompatPadding="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@color/yellow">
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="10dp"
-                    android:text="Select type"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorBlack"/>
-                <Spinner
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="230dp" />
-
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
+            android:text="Add Category"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="10dp"/>
         <androidx.cardview.widget.CardView
             android:id="@+id/card_add_Category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/card_sub_category"
+            android:layout_below="@+id/card_category"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="50dp"
             android:layout_marginRight="10dp"
@@ -221,7 +204,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
-                    android:text="Add Category"
+                    android:hint="Add Category"
                     android:textSize="15sp"
                     android:textStyle="bold"
                     android:background="@android:color/transparent"
