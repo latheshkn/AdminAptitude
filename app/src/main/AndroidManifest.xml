@@ -10,18 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Emptyactivity"></activity>
-        <activity android:name=".LoginActivity" >
+        <activity android:name=".LoginActivity">
+
+
+        </activity>
+        <activity android:name=".AddSetActivity" />
+        <activity android:name=".SelectCategoryForAddQuestionActivity" >
+
+
+        </activity>
+        <activity android:name=".AddSubCategoryActivity" >
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            
+
         </activity>
-        <activity android:name=".AddSetActivity" />
-        <activity android:name=".SelectCategoryForAddQuestionActivity" />
-        <activity android:name=".AddSubCategoryActivity" />
         <activity
             android:name=".CandidateDetailActivity"
             android:parentActivityName=".CandidateListActivity" />
@@ -51,7 +57,9 @@
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
 
+
         </activity> <!-- Facebook Metedat -->
+
         <activity
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
